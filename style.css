@@ -1,0 +1,39 @@
+.nav{
+    width: 700px;
+    background: rgba(0, 0, 0, 0.7); /* Fundo escuro translúcido */
+    border: 2px solid orange; /* Borda laranja fina */
+    display: flex;
+    padding: 10px;
+ 
+    
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: end;
+    margin-right: 45px;
+
+}
+
+.nav li {
+    flex: 1;
+    text-align: center;
+}
+
+.nav a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.nav li:hover {
+   background: rgba(245, 245, 245, 0.421);
+   border-radius: 20px;
+}
+
