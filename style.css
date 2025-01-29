@@ -1,9 +1,12 @@
 .nav{
     width: 700px;
-    background: rgba(0, 0, 0, 0.7); /* Fundo escuro translúcido */
-    border: 2px solid orange; /* Borda laranja fina */
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid orange; 
     display: flex;
-    padding: 10px;
+    padding: 0px;
+    margin-left: 40%;
+    margin-top: 1.5%;
+    
  
     
 }
@@ -16,12 +19,15 @@
     align-items: center;
     justify-content: end;
     margin-right: 45px;
+    
 
 }
 
 .nav li {
     flex: 1;
     text-align: center;
+    font-weight: 200;
+    color: white;
 }
 
 .nav a {
@@ -33,7 +39,14 @@
 }
 
 .nav li:hover {
-   background: rgba(245, 245, 245, 0.421);
-   border-radius: 20px;
+   background: rgba(245, 245, 245, 0.693);
+   border-radius: 10px;
 }
 
+.headvideo{
+    right: 0.5px;
+    bottom: 120px;
+    position: absolute;
+    z-index: -1;
+
+}
