@@ -3,21 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EMPREENDIMENTO</title>
+    <title>JB</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img class="logo" src="files/logoimage.png" alt="logo-presentation">
-        <nav class="nav">
-            <ul class="nav-links">
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <video autoplay loop muted playsinline class="headvideo" type="video/mp4" src="files/headVideo.mp4"></video>
+    <!-- Vídeo de fundo -->
+    <div class="headvideo">
+        <video autoplay loop muted>
+            <source src="files/headVideo.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+    </div>
+    
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="logo"><img width="44%" height="30%" src="files/logoimage.png" alt=""></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <main>
+        <h1 class="firsth1">CONSTRUINDO UM</h1>
+        <h1 class="firsth1">FUTURO CONCETRO</h1>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
