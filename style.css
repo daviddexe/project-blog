@@ -6,6 +6,8 @@
     padding: 0;
     margin: 3% auto;
     border-radius: 20px;
+    float: right;
+   
 }
 
 .nav ul {
@@ -15,6 +17,7 @@
     justify-content: flex-end;
     align-items: center;
     margin-right: 45px;
+    
     padding: 0;
 }
 
@@ -22,6 +25,7 @@
     text-align: center;
     font-weight: 200;
     color: white;
+    
 }
 
 .nav a {
@@ -30,6 +34,7 @@
     text-decoration: none;
     color: white;
     font-family: Arial, sans-serif;
+    
 }
 
 .nav li:hover {
@@ -56,6 +61,7 @@ video {
         width: 90%;
         display: flex;
         justify-content: center;
+        float: initial;
     }
 
     .nav ul {
@@ -73,3 +79,13 @@ video {
         width: 100%;
     }
 }
+
+.logo {
+    width: 450px; /* Mantém proporções */
+    max-width: 650px; /* Ajuste conforme necessário */
+    height: auto;
+    position: absolute;
+    bottom: 65%;
+   
+  }
+  
