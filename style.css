@@ -1,37 +1,56 @@
+/* Ajustes Gerais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.firsth1{
-   color: #ffffff;
-   font-weight: 600;
-   font-family: "Borel", serif;
-   font-size:  4em;
-   display: flex;
-   justify-content: center;
-   position: relative;
-   top: 3em;
-
-      
-}  
-
 body {
     font-family: Arial, sans-serif;
-    
+    overflow-x: hidden;
 }
 
+/* Melhorias no Texto Principal */
+.firsth1 {
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Borel", serif;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 5em;
+}
+
+/* Vídeo de Fundo */
+.headvideo {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+video {
+    filter: brightness(50%);
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+/* Barra de Navegação */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgba(0, 0, 0, 0.2);
-    padding: 10px 20px;
-    position: fixed;
+    padding:10px 2px;
+    position: relative;
     width: 100%;
+    height: 100px;
     z-index: 10;
-    height: 11%;
     border-radius: 10px;
 }
 
@@ -42,7 +61,6 @@ body {
 
 .nav-links li {
     margin: 0 20px;
-
 }
 
 .nav-links a {
@@ -58,31 +76,20 @@ body {
 .nav-links a:hover {
     background: rgba(245, 245, 245, 0.7);
     transform: scale(1.05);
-}
-.logo {
-    filter: brightness(1.3) contrast(1.2) saturate(1.5)blur(0.6px) drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.2));
-  }
-  
-
-/* Video de fundo */
-.headvideo {
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    
+    border: solid 3px orangered;
 }
 
-video {
-    filter: brightness(50%)blur(1.6px);
-    width: 100%;
-    height: 140%;
-    object-fit: cover;
+/* Ajustes para Logo */
+.logo img {
+   width: 40%;
+   height: 40%;
+   position: relative;
+   display: flex;
+   bottom: 0.4em;   
+   left: 10%; 
 }
 
-/* Estilos para o menu hambúrguer */
+/* Menu Hambúrguer */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -90,19 +97,45 @@ video {
 }
 
 .hamburger .bar {
-    width: 25px;
+    width: 30px;
     height: 3px;
     background-color: white;
     margin: 4px 0;
+    
 }
 
-/* Responsividade para dispositivos móveis */
+/* Ajustes para Botões */
+#contbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20em;
+}
+
+.firstButtons {
+    padding: 15px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: rgb(0, 0, 0);
+    background: rgba(255, 252, 252, 0.836);
+    border-radius: 10px;
+}
+
+.firstButtons:hover {
+    background: rgba(245, 245, 245, 0.7);
+    border: solid 4px orangered;
+}
+
+/* ✅ Melhor Responsividade para Telas Pequenas */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         align-items: center;
-        padding: 25px;
-
+        padding: 15px;
     }
 
     .nav-links {
@@ -110,52 +143,48 @@ video {
         flex-direction: column;
         align-items: center;
         position: absolute;
-        top: 110px;
+        top: 320px;
         left: 0;
         right: 0;
-        background: rgba(0, 0, 0, 0.478);
-        padding: 20px;
-        border-top: 2px solid orange;
-        
-    }
-
-    .nav-links li {
-        margin: 10px 0;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 30px;
     }
 
     .nav-links.active {
         display: flex;
+        position: absolute;
+        top: 7em;
+        gap: 35px;
     }
 
     .hamburger {
         display: flex;
         position: relative;
-        bottom: 140px;
+        bottom: 7em;
     }
-}
 
-/* Estilos para o vídeo e layout responsivo */
-@media (max-width: 768px) {
+    .firsth1 {
+        font-size: 2em;
+        top: 8em;
+    }
+
     video {
-        object-position: center top;
-        filter: brightness(40%);
-        height: 110%;
+        height: 100vh;
+        object-fit: cover;
     }
 
-    .logo {
-        width: 100%;
-        height: 500%;
-        position: relative;
-        bottom: 20px;
-        left: 27%;
+    #contbutton {
+        flex-direction: column;
         
     }
 
-    .firsth1{
-        position: relative;
-        font-size: 2em;
+    .firstButtons {
+        width: 80%;
+    }
+    .logo{
         display: flex;
-        top: 310px;
-
+        position: relative;
+        left: 10px;
+        bottom: 1em;
     }
 }
