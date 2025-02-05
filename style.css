@@ -1,17 +1,18 @@
-/* Gerais */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+
+body{
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     background-color: rgba(48, 28, 31, 0.234);
 }
 
-/* Texto Principal */
+
 .firsth1 {
     color: #ffffff;
     font-weight: 600;
@@ -24,7 +25,7 @@ body {
     top: 4.1em;
 }
 
-/* Vídeo de Fundo */
+
 .headvideo {
     width: 100%;
     height: 100vh;
@@ -41,12 +42,12 @@ video {
     height: 90vh;
     object-fit: cover;
     width: 100%;
-    /* Ajuste conforme necessário */
+    
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0));
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0));
 }
 
-/* Barra de Navegação */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -85,7 +86,7 @@ video {
     border: solid 3px orangered;
 }
 
-/* Logo */
+
 .logo img {
     width: 40%;
     height: 40%;
@@ -95,7 +96,7 @@ video {
     left: 10%;
 }
 
-/* Hambúrguer */
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -110,7 +111,7 @@ video {
 
 }
 
-/* Ajustes para Botões */
+
 #contbutton {
     display: flex;
     justify-content: center;
@@ -137,7 +138,7 @@ video {
     border: solid 4px orangered;
 }
 
-/*Responsividade para Telas Pequenas */
+
 @media (max-width: 768px) {
 
 
@@ -252,7 +253,7 @@ p {
     position: relative;
 }
 
-/* Ajustes responsivos para a Section 2 */
+
 @media (max-width: 768px) {
     .section2 {
         text-align: center;
@@ -296,7 +297,7 @@ p {
     top: 23em;
     display: flex;
     justify-content: flex-start;
-    /* Centraliza o conteúdo */
+   
 }
 
 .section3 img {
@@ -384,15 +385,15 @@ p {
 }
 
 .container2>.image-box>img{
-    border-radius: 50%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    
+    border-radius: 0px;
     gap: 20px;
-    width: 20%;
-    height: 250px;
-    margin: auto;
+    max-width: 100%;
+    max-height: 600px;
+    display: flex;
     top: 22em;
     position: relative;
+    filter: brightness(80%);
     
 
 }
@@ -402,28 +403,106 @@ p {
     
 }
 
-.container2{
-    top: 80px;
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.210); 
+    margin: auto;
+    color: white;
+    position: relative;
+    bottom: 3em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+    
+}
+
+
+.stat {
+    flex: 1;
+}
+
+.stat h1 {
+    font-size: 2rem;
+    margin: 15px auto;
     position: relative;
 }
 
-.traco2{
-position: relative;
-top: 20em;
+.stat p {
+    font-size: 1.2rem;
+    margin: 5px 0 0;
+    position: relative;
+    
+}
+.contentInf>p{
+    font-size: 2em;
+}
+.contentInf{
+        color: #ffffff;
+        border-radius: 5px;
+        bottom: 13em;
+        margin: auto;
+        width: 90%;
+        height: 260px;
+        font-size: 0.9rem;
+        padding: 15px;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.290); 
 }
 
-@media (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     .container2>.image-box>img{
-        width: 200px;
-        height: 200px;
-        top: 80px;
+        top: 10em;
+        height: 500px ;
         position: relative;
     }
+
+    .contentInf {
+        bottom: 50em;
+        width: 90%;
+        margin: auto;
+        height: 220px;
+        font-size: 0.4rem;
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .stats-container {
+        display: flex;
+        width: 93%;
+        height: 120px;
+        background: rgba(0, 0, 0, 0.208); 
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        bottom: 23em;
+        position: relative;
+        margin: 21px;
+        font-size: 10px;
+    }
+
+    }
+
+    .stat {
+        margin-bottom: 10px;
+    }
+
+    .stat h1 {
+        font-size: 1.5rem;
+    }
+
+    .stat p {
+        font-size: 1rem;
+
+     
+    }
+
+
     .traco2{
         position: relative;
-        top: 90px;
+        top: 10em;
     }
-    .container2>.image-box>.textPresentation{
-        margin-top: 6em;
-    }
-}
