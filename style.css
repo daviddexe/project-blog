@@ -170,7 +170,7 @@ video {
     .hamburger {
         display: flex;
         position: relative;
-        bottom: 7em;
+        bottom: 8em;
     }
 
     .firsth1 {
@@ -195,7 +195,7 @@ video {
     .logo {
         display: flex;
         position: relative;
-        left: 4.6em;
+        left: 5.6em;
         bottom: 1em;
         width: 100%;
         height: 600px;
@@ -354,6 +354,7 @@ p {
 
 .image-box {
     text-align: center;
+    word-break: break-all;
     
     
 }
@@ -370,6 +371,7 @@ h1 {
 
 p {
     margin-top: 10px;
+    
     
 }
 
@@ -408,7 +410,7 @@ p {
 .stats-container {
     display: flex;
     justify-content: space-around;
-    width: 90%;
+    width: 100%;
     height: 90px;
     background-color: rgba(0, 0, 0, 0.210); 
     margin: auto;
@@ -418,6 +420,9 @@ p {
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    font-family: "Lexend Zetta", serif;
+    font-weight: 700;
+    gap: 10px;
 
     
 }
@@ -425,6 +430,7 @@ p {
 
 .stat {
     flex: 1;
+    
 }
 
 .stat h1 {
@@ -434,25 +440,31 @@ p {
 }
 
 .stat p {
-    font-size: 1.2rem;
+    font-size: 0.3rem;
     margin: 5px 0 0;
     position: relative;
+    font-family: "Lexend Zetta", serif;
+    font-weight: 700;
     
 }
 .contentInf>p{
     font-size: 2em;
+    font-family: "Lexend Zetta", serif;
+    font-weight: 700;
 }
 .contentInf{
         color: #ffffff;
         border-radius: 5px;
         bottom: 13em;
         margin: auto;
-        width: 90%;
-        height: 260px;
+        width: 100%;
+        height: 270px;
         font-size: 0.9rem;
         padding: 15px;
         position: relative;
         background-color: rgba(0, 0, 0, 0.290); 
+        font-family: "Lexend Zetta", serif;
+        font-weight: 700;
 }
 
 
@@ -475,7 +487,7 @@ p {
 
     .stats-container {
         display: flex;
-        width: 93%;
+        width: 100%;
         height: 120px;
         background: rgba(0, 0, 0, 0.208); 
         border-radius: 10px;
@@ -499,6 +511,7 @@ p {
 
     .stat p {
         font-size: 1rem;
+       
 
      
     }
@@ -508,3 +521,59 @@ p {
         position: relative;
         top: 10em;
     }
+
+    .founder{
+        
+        width: 100%;
+       
+        
+    }
+
+    .imgfounder{
+        border-radius: 50%;
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        top: 20%;
+        position: relative;
+
+    }
+
+    .textfounder{
+        font-size: 20px;
+        position: relative;
+        top: 20%;
+        word-break:break-all;
+        font-family: "Lexend Zetta", serif;
+        font-weight: 700;
+        
+    }
+
+    @media screen and (max-width: 768px){
+        .imgfounder{
+            position: relative;
+            bottom: 5em;
+            width: 300px;
+            height: 300px;
+        }
+        .textfounder{
+            font-size: 20px;
+            position: relative;
+            top: 20%;
+            word-break: break-all;
+        }
+    }
+
+    .description{
+        font-family: "Lexend Zetta", serif;
+        font-weight: 700;
+    }
+
+    .divfooter{
+        background-color: orangered;
+        width: 100%;
+        height: 220px;
+        margin-top:400px;
+    }
+
+   
