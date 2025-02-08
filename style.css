@@ -102,6 +102,8 @@ video {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    position: relative;
+    bottom:  75px;
 }
 
 .hamburger .bar {
@@ -171,7 +173,7 @@ video {
     .hamburger {
         display: flex;
         position: relative;
-        bottom: 7em;
+        
         margin: auto;
     }
 
@@ -198,7 +200,7 @@ video {
         display: flex;
         position: relative;
         left: 57px;
-        bottom: 1em;
+        
         width: 80%;
         height: 500px;
         margin: auto;
