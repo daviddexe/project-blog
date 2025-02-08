@@ -103,7 +103,7 @@ video {
     flex-direction: column;
     cursor: pointer;
     position: relative;
-    bottom:  75px;
+    bottom:  90px;
 }
 
 .hamburger .bar {
