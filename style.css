@@ -173,7 +173,7 @@ video {
     .hamburger {
         display: flex;
         position: relative;
-        
+        bottom: 80px;
         margin: auto;
     }
 
